@@ -1,0 +1,141 @@
+@media(prefers-color-scheme:dark) {
+    :root {
+        --body: #151437;
+        --text: #fff;
+        --dots: #EBEBEB;
+    }
+
+    .nav__logo::after {
+        content: url(../img/svg/logo-dark.svg);
+    }
+
+    .about__work {
+        color: #fff;
+        background: #7177F1;
+    }
+
+    .list-group-item {
+        box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    }
+
+    .footer__contact,
+    .footer__link {
+        color: #fff;
+    }
+
+    .footer__contact:hover,
+    .footer__link:hover {
+        color: var(--main-color);
+    }
+}
+
+
+@media(max-width:1200px) {
+    .my-works::before {
+        display: none;
+    }
+
+    .works__tab-title,
+    .works__tab-image {
+        text-align: center;
+    }
+
+    .works__tab-image img {
+        border-radius: 8px;
+    }
+
+    .works__tab-title {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:991px) {
+    .nav-order {
+        margin-right: 0;
+    }
+
+    .nav__list {
+        row-gap: 15px;
+        padding-top: 30px;
+    }
+
+    .my-works::after,
+    .capabilities__accordion::before,
+    .header__bottom::before,
+    .header__bottom::after,
+    .header__nav::before,
+    .header__nav::after {
+        display: none;
+    }
+
+    .about::before,
+    .about::after {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .about-btn {
+        margin-left: 0;
+    }
+
+    .about__descriptions {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:575px) {
+    .about__work {
+        transform: unset;
+        font-size: 14px;
+        line-height: 30%;
+        padding: 17px 19px;
+    }
+
+    .about__work::before {
+        font-size: 14px;
+        width: 25px;
+        height: 25px;
+        line-height: 30%;
+    }
+}
+
+@media(max-width:425px) {
+    .header__title {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    .works__tab-txt {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .works__tab-btn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:375px) {
+    .header__content-btn {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__title {
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    .accordion__txt {
+        text-align: justify;
+    }
+}
